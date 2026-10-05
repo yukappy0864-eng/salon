@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salon ○○(仮) | 美容サロン</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4eff3;--ink:#2b1b2e;--sub:#6b5a6e;--accent:#a8456b;--card:#fff;--line:#dccfda;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f1522;--ink:#f2e8f0;--sub:#b9a7bc;--accent:#e08aa8;--card:#2a1d2e;--line:#41304a}}
+:root[data-theme="dark"]{--bg:#1f1522;--ink:#f2e8f0;--sub:#b9a7bc;--accent:#e08aa8;--card:#2a1d2e;--line:#41304a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.9;font-size:16px}
+h1,h2,.logo{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:700;letter-spacing:.06em}
+main,header,footer{max-width:720px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px}
+.logo{font-size:18px}
+header a.btn{padding:8px 18px;font-size:14px}
+.hero{padding:48px 0 72px;position:relative}
+.hero::before{content:"";position:absolute;right:-60px;top:10px;width:260px;height:260px;border-radius:50%;background:var(--accent);opacity:.16;z-index:0}
+.hero>*{position:relative;z-index:1}
+h1{font-size:clamp(34px,9vw,56px);line-height:1.45;margin:0 0 20px}
+.hero p{color:var(--sub);margin:0 0 32px;max-width:30em}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:14px 32px;border-radius:999px;font-weight:500}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:24px;margin:0 0 24px}
+.menu{list-style:none;margin:0;padding:0}
+.menu li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.menu small{display:block;color:var(--sub);font-size:13px;line-height:1.6}
+.menu b{font-weight:500;white-space:nowrap}
+dl{display:grid;grid-template-columns:6em 1fr;gap:10px 12px;margin:0}
+dt{color:var(--sub)}dd{margin:0}
+.note{color:var(--sub);font-size:13px;margin-top:20px}
+#reserve{text-align:center}
+#reserve p{color:var(--sub);margin:0 0 24px}
+footer{padding-top:24px;padding-bottom:40px;color:var(--sub);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <span class="logo">Salon ○○</span>
+  <a class="btn" href="#reserve">予約する</a>
+</header>
+<main>
+  <div class="hero">
+    <h1>今日の自分を、<br>少しだけ好きになる。</h1>
+    <p>○○駅から徒歩○分の、完全予約制のプライベートサロンです。マンツーマンで、ひとりひとりに合わせた施術をおこないます。</p>
+    <a class="btn" href="#reserve">予約する</a>
+  </div>
+
+  <section id="menu">
+    <h2>メニュー・料金</h2>
+    <ul class="menu">
+      <li><span>カット<small>シャンプー・ブロー込み</small></span><b>¥5,500</b></li>
+      <li><span>カラー<small>カット別・根元〜全体</small></span><b>¥7,700〜</b></li>
+      <li><span>トリートメント<small>髪の状態に合わせて選べます</small></span><b>¥4,400〜</b></li>
+      <li><span>ヘッドスパ<small>30分・頭皮ケア</small></span><b>¥4,950</b></li>
+    </ul>
+    <p class="note">※ メニューと料金は仮の内容です。税込表示にしています。</p>
+  </section>
+
+  <section id="access">
+    <h2>店舗情報</h2>
+    <dl>
+      <dt>住所</dt><dd>〒000-0000<br>○○県○○市○○ 0-0-0</dd>
+      <dt>アクセス</dt><dd>○○駅 徒歩○分</dd>
+      <dt>営業時間</dt><dd>10:00〜19:00(最終受付 17:30)</dd>
+      <dt>定休日</dt><dd>毎週火曜日</dd>
+      <dt>電話</dt><dd>000-0000-0000</dd>
+    </dl>
+  </section>
+
+  <section id="reserve">
+    <h2>ご予約</h2>
+    <p>お電話、またはLINEからご予約いただけます。<br>初めての方は、ご希望をお気軽にお伝えください。</p>
+    <a class="btn" href="tel:0000000000">電話で予約する</a>
+  </section>
+</main>
+<footer>© Salon ○○</footer>
+</body>
+</html>
